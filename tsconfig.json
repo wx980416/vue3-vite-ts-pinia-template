@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types", // 默认类型
+      "src/types" // 自定义类型
+    ],
+    "target": "ESNext", // 编译目标
+    "useDefineForClassFields": true, // 使用defineProperty定义类字段
+    "module": "ESNext", // 模块化
+    "moduleResolution": "Node", // 模块解析策略
+    "strict": true, // 开启所有严格类型检查
+    "jsx": "preserve", // 保留jsx
+    "resolveJsonModule": true, // 允许导入json文件
+    "isolatedModules": true, // 仅检查语法
+    "esModuleInterop": true, // 允许使用import * as React from 'react'
+    "lib": ["ESNext", "DOM"], // 依赖库
+    "skipLibCheck": true, // 跳过类型检查
+    "noEmit": true, // 不生成输出文件
+    "baseUrl": "./", // 基础路径
+    "paths": {
+      // 路径别名
+      "@": ["src"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"], // 包含的文件
+  "references": [{ "path": "./tsconfig.node.json" }] // 引用的tsconfig
+}
