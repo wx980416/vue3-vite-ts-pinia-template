@@ -3,11 +3,11 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Index',
     meta: {
-      title: '首页',
+      title: 'index',
     },
-    component: () => import('@/views/home/index.vue'),
+    component: () => import('@/views/index.vue'),
   },
 ];
 

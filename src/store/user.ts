@@ -12,7 +12,7 @@ export const useUserStore = defineStore({
     };
   },
   actions: {
-    updateName(name: string) {
+    setName(name: string) {
       this.name = name;
     },
   },

@@ -21,7 +21,8 @@
       // 路径别名
       "@": ["src"],
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["element-plus/global"] // 引入的类型
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"], // 包含的文件
   "references": [{ "path": "./tsconfig.node.json" }] // 引用的tsconfig
