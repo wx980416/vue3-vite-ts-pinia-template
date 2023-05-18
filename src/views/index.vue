@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="home">
 import { computed } from 'vue';
 import { useUserStore } from '@/store/user';
 const userStore = useUserStore();
