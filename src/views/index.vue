@@ -11,7 +11,7 @@ const input = computed({
 
 <template>
   <div>home</div>
-  <div>{{ name }}</div>
+  <div>store-name: {{ name }}</div>
   <el-input v-model="input" placeholder="Please input"></el-input>
 </template>
 
