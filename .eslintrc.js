@@ -21,5 +21,6 @@ module.exports = {
     // override/add rules settings here, such as:
     'vue/multi-word-component-names': 'off', // 说明：组件名为多个单词时，使用短横线命名法
     '@typescript-eslint/no-unused-vars': 'off', // 说明：禁止出现未使用过的变量
+    'vue/attribute-hyphenation': 'off', // 说明：关闭属性名驼峰化检查
   },
 };
