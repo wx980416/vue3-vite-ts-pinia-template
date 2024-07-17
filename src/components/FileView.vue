@@ -16,6 +16,16 @@ const renderedHandler = () => {
 const errorHandler = () => {
   console.log('渲染失败');
 };
+
+const options = {
+  beforeTransformData: function (workbookData: any) {
+    console.log(111);
+    console.log(workbookData);
+
+    //修改workbookData，可以打印出来看看数据格式
+    return workbookData;
+  },
+};
 </script>
 
 <template>
@@ -23,7 +33,13 @@ const errorHandler = () => {
     <h1>PPT文档预览</h1>
     <iframe :src="`/PPTXjs-1.21.1/index.html?file=` + pptx" width="100%" height="900" frameborder="0"></iframe>
     <h1>word文档预览</h1>
-    <vue-office-docx :src="docx" style="width: 100%; height: 900px" @rendered="renderedHandler" @error="errorHandler" />
+    <vue-office-docx
+      :options="options"
+      :src="docx"
+      style="width: 100%; height: 900px"
+      @rendered="renderedHandler"
+      @error="errorHandler"
+    />
     <h1>excel预览</h1>
     <vue-office-excel
       :src="excel"

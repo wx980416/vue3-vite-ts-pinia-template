@@ -18,9 +18,23 @@ module.exports = {
   ],
 
   rules: {
-    // override/add rules settings here, such as:
-    'vue/multi-word-component-names': 'off', // 说明：组件名为多个单词时，使用短横线命名法
-    '@typescript-eslint/no-unused-vars': 'off', // 说明：禁止出现未使用过的变量
-    'vue/attribute-hyphenation': 'off', // 说明：关闭属性名驼峰化检查
+    // TS
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-debugger': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
+    // Vue
+    'vue/no-v-html': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/require-explicit-emits': 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/no-unused-vars': 'off',
+    'no-empty': 'off',
+    'no-unreachable': 'off',
   },
 };
